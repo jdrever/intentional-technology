@@ -32,6 +32,14 @@ ${content}
   });
 
 
+  eleventyConfig.addPairedShortcode("guidance", function(content, title) {
+    return `<div class="container-fluid rounded m-1 p-2 bg-light">
+      <h2 class="text-dark display-6"><strong><i class="bi bi-compass"></i>&nbsp;GUIDANCE:&nbsp;</strong></span>${title}</strong></h2>
+${content}
+</div>`;
+  });
+
+
   /**
  * Flatten a navigation object into an array, and add "next" and "prev"
  * properties.

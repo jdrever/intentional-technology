@@ -3,7 +3,7 @@ layout: layout.njk
 eleventyNavigation:
   key: "Reflection on checking your emails"
   parent: "Checking Your Emails"
-  order: 2
+  order: 2.1
 ---
 {% activity "How did checking your emails go ?" %}
 <form class="row g-3">

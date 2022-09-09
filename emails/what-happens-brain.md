@@ -3,7 +3,7 @@ layout: layout.njk
 eleventyNavigation:
   key: "Reflection on checking your emails"
   parent: "Checking Your Emails"
-  order: 3
+  order: 2.2
 ---
 
 {% idea "What happens to your brain when you check your emails?" %}

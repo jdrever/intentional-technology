@@ -2,8 +2,8 @@
 layout: layout.njk
 eleventyNavigation:
   key: "Introduce Yourself"
-  parent: Intentional Technology
-  order: 1
+  parent: "Intentional Technology"
+  order: 1.1
 ---
 
 <h1>Introduce Yourself</h1>
