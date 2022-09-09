@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 eleventyNavigation:
-  key: "Being Intentional About Technology"
+  key: "The Eco-System"
   parent: "Preparing a Simple Eco-System"
   order: 3.2
 ---

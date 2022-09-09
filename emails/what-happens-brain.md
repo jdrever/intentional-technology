@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 eleventyNavigation:
-  key: "Reflection on checking your emails"
+  key: "What happens to your brain when you check your emails?"
   parent: "Checking Your Emails"
   order: 2.2
 ---

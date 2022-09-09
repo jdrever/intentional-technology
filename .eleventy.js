@@ -45,7 +45,6 @@ ${content}
  * properties.
  */
 eleventyConfig.addFilter('flattenNavigationAndAddNextPrev', (nav) => {
-  console.log("starting");
   const flat = [];
   const visit = (items) => {
     for (const item of items) {
@@ -56,7 +55,6 @@ eleventyConfig.addFilter('flattenNavigationAndAddNextPrev', (nav) => {
   visit(nav);
   for (let i = 0; i < flat.length; i++) {
     const item = flat[i];
-    console.log(i-1);
     if (i>0) { item.prevUrl = flat[i - 1].url;  item.prevTitle=flat[i - 1].title } 
     if (i<flat.length-1) { item.nextUrl = flat[i + 1].url; item.nextTitle=flat[i + 1].title} 
   }
