@@ -773,6 +773,10 @@ textarea.form-control {
   padding-left: 0.5rem !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 /* rtl:begin:remove */
 
 /* rtl:end:remove */

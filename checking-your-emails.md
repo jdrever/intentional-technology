@@ -1,8 +1,9 @@
 ---
 layout: layout.njk
 eleventyNavigation:
-  key: Checking Your Emails
-  parent: Intentional Technology
+  key: "Checking Your Emails"
+  parent: "Intentional Technology"
+  order: 2
 ---
 
 <h1>Checking Your Emails</h1>

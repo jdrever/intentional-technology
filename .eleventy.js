@@ -31,8 +31,28 @@ ${content}
 </div>`;
   });
 
-  eleventyConfig.addShortcode("nextButton", function(url) {
-    return `<div class="float-right"><a class="btn btn-primary" href="${url}" role="button">NEXT &#8594;</a></div>`;
-  });
+
+  /**
+ * Flatten a navigation object into an array, and add "next" and "prev"
+ * properties.
+ */
+eleventyConfig.addFilter('flattenNavigationAndAddNextPrev', (nav) => {
+  console.log("starting");
+  const flat = [];
+  const visit = (items) => {
+    for (const item of items) {
+      flat.push(item);
+      visit(item.children);
+    }
+  };
+  visit(nav);
+  for (let i = 0; i < flat.length; i++) {
+    const item = flat[i];
+    console.log(i-1);
+    if (i>0) { item.prevUrl = flat[i - 1].url;  item.prevTitle=flat[i - 1].title } 
+    if (i<flat.length-1) { item.nextUrl = flat[i + 1].url; item.nextTitle=flat[i + 1].title} 
+  }
+  return flat;
+});
 
 }

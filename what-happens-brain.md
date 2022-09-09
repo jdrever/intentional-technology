@@ -1,7 +1,9 @@
 ---
 layout: layout.njk
 eleventyNavigation:
-  key: Reflection on checking your emails
+  key: "Reflection on checking your emails"
+  parent: Intentional Technology
+  order: 3
 ---
 
 {% idea "What happens to your brain when you check your emails?" %}
