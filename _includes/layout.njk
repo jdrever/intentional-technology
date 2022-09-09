@@ -1,0 +1,27 @@
+{% include "header.njk" %} 
+     {% set breadcrumbPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+      <div class="container-fluid bg-light p-1 border-bottom">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+
+            {%- for entry in breadcrumbPages %}
+              <li class="breadcrumb-item">
+                {% if entry.url != page.url %}
+                  <a href="{{ entry.url | url }}">
+                  {% endif %}
+                  {{ entry.title }}
+                  {% if entry.url != page.url %}
+                  </a>
+                {% endif %}
+              </li>
+            {%- endfor %}
+          </ol>
+        </nav>
+      </div>
+  <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>
+{% include "footer.njk" %}
+
