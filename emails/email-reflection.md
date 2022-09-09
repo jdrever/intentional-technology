@@ -2,8 +2,8 @@
 layout: layout.njk
 eleventyNavigation:
   key: "Reflection on checking your emails"
-  parent: Intentional Technology
-  order: 3
+  parent: "Checking Your Emails"
+  order: 2
 ---
 {% activity "How did checking your emails go ?" %}
 <form class="row g-3">

@@ -2,7 +2,7 @@
 layout: layout.njk
 eleventyNavigation:
   key: "Reflection on checking your emails"
-  parent: Intentional Technology
+  parent: "Checking Your Emails"
   order: 3
 ---
 
