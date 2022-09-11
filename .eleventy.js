@@ -1,5 +1,6 @@
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { EleventyEdgePlugin } = require("@11ty/eleventy");
 
 
 module.exports = function (eleventyConfig) {
@@ -7,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css/");
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(EleventyEdgePlugin);
 
   eleventyConfig.addPlugin(purgeCssPlugin, {
     // Optional: Specify the location of your PurgeCSS config

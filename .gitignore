@@ -1,2 +1,8 @@
 node_modules
 _site
+
+# Netlify generated stuff
+.netlify/
+
+# Eleventy Edge Build Data files
+netlify/edge-functions/_generated
