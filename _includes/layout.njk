@@ -1,12 +1,4 @@
-The content outside of the `edge` shortcode is generated with the Build.
 
-{% edge %}
-The content inside of the `edge` shortcode is generated on the Edge.
-
-<pre>
-{{ eleventy | dump(2) }}
-</pre>
-{% endedge %}
 
 {% include "header.njk" %} 
      {% set breadcrumbPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
