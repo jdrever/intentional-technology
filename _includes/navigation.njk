@@ -1,16 +1,15 @@
 {% set flatNavItems = collections.all | eleventyNavigation | flattenNavigationAndAddNextPrev %}
 
-<div class="text-center">
 {% for item in flatNavItems %}
   {% if item.url === page.url %}
     {% if item.prevTitle %}
-      <a class="btn btn-primary" href="{{ item.prevUrl }}" role="button">
+      <a class="btn btn-primary m-2" href="{{ item.prevUrl }}" role="button">
         &larr; PREVIOUS: {{ item.prevTitle }}
       </a>
     {% endif %}
 
     {% if item.nextTitle %}
-      <a class="btn btn-primary" href="{{ item.nextUrl }}" role="button">
+      <a class="btn btn-primary m-2" href="{{ item.nextUrl }}" role="button">
         NEXT: {{ item.nextTitle }} &rarr;
       </a>
     {% endif %}
