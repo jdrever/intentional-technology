@@ -1,0 +1,17 @@
+
+
+{% include "header.njk" %} 
+  <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
+    <main>
+          {{ content | safe }}
+    <ul>
+{%- for course in collections.course -%}
+
+  <li><a href="{{ course.url }}">{{ course.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+    </main>
+  </div>
+{% include "footer.njk" %}
+
