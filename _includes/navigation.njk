@@ -12,6 +12,10 @@
       <a class="btn btn-primary m-2" href="{{ item.nextUrl }}" role="button">
         NEXT: {{ item.nextTitle }} &rarr;
       </a>
+    {% else %}
+            <a class="btn btn-primary m-2" href="/" role="button">
+        FINISH COURSE
+      </a>
     {% endif %}
   {% endif %}
 {% endfor %}
