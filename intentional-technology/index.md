@@ -2,6 +2,8 @@
 layout: layout.njk
 tags: course
 title: Intentional Technology
+description: "The aim of this course is to help you use technology intentionally.  We will work through a variety of real life scenarios and explore some small, simple changes that hopefully make a big difference to the way you use technology."
+status: Discovery
 eleventyNavigation:
   key: Intentional Technology
 ---
