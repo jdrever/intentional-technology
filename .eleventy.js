@@ -41,6 +41,10 @@ ${content}
 </div>`;
   });
 
+  eleventyConfig.addPairedShortcode("link", function(title, url) {
+    return `<a href="${url}" target="_blank" rel="noreferrer">
+      ${title}</a>`;
+  });
 
   /**
  * Flatten a navigation object into an array, and add "next" and "prev"

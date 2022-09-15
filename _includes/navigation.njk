@@ -19,4 +19,30 @@
     {% endif %}
   {% endif %}
 {% endfor %}
-</div>
+<details>
+  <summary>See where you are in the course</summary>
+{% set navPages = collections.all | eleventyNavigation(eleventyNavigation.parent) %}
+{% macro renderNavListItem(entry) -%}
+<li>
+    {% if entry.url != page.url %} 
+    <a href="{{ entry.url | url }}">
+    {% else %} <b>
+    {% endif %}
+    {{ entry.title }}
+    {% if entry.url != page.url %} 
+    </a>
+    {% else %} << You are here </b>
+    {% endif %}
+</li>
+{%- if entry.children.length -%}
+  <ul>
+    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+  </ul>
+{%- endif -%}
+</li>
+{%- endmacro %}
+
+<ul>
+{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+</ul>
+</details>
