@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-tags: course
+tags: NOcourse
 title: Intentional Meditation
 description: "You may find this guide useful if you have already started to meditate but haven't yet settled on a path."
 status: Discovery
