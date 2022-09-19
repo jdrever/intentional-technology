@@ -14,13 +14,13 @@
       </a>
     {% else %}
             <a class="btn btn-primary m-2" href="/" role="button">
-        FINISH COURSE
+        FINISH guide
       </a>
     {% endif %}
   {% endif %}
 {% endfor %}
 <details>
-  <summary>See where you are in the course</summary>
+  <summary>See where you are in the guide</summary>
 {% set navPages = collections.all | eleventyNavigation(eleventyNavigation.parent) %}
 {% macro renderNavListItem(entry) -%}
 <li>

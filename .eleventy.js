@@ -18,6 +18,18 @@ module.exports = function (eleventyConfig) {
     quiet: false,
   });
 
+  eleventyConfig.addFilter('guideFilter', function(collection, guide) {
+    if (!guide) return collection;
+      const filtered = collection.filter(item => item.guideParent == guide)
+      return filtered;
+  });
+
+    // Get only content that matches a tag
+    eleventyConfig.addCollection("guideSections", function(collectionApi) {
+      return collectionApi.getFilteredByTag("guide-section")
+        .sort((a, b) => a.order - b.order);
+    });
+
 
   eleventyConfig.addPairedShortcode("activity", function(content, title) {
     return `<div class="container-fluid rounded m-1 p-2 bg-light">
@@ -44,6 +56,15 @@ ${content}
   eleventyConfig.addPairedShortcode("link", function(title, url) {
     return `<a href="${url}" target="_blank" rel="noreferrer">
       ${title}</a>`;
+  });
+
+  eleventyConfig.addPairedShortcode("readMore", function(content,title) {
+    return `
+    <details>
+      <summary><span class="h2 text-dark">FIND OUT MORE: ${title} &darr;</summary>
+      ${content}
+    </details>
+  `;
   });
 
   /**

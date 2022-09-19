@@ -1,6 +1,6 @@
 ---
 title: "Moby Dick as Guide to the 21st Century"
-tags: NOcourse
+tags: NOguide
 layout: layout.njk
 description: "I think Herman Melville's Moby Dick can be viewed as a survival guide to the twenty first century."
 status: Discovery

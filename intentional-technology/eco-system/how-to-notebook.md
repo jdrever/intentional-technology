@@ -22,6 +22,6 @@ eleventyNavigation:
 
 <h2>Intermediate and Complex</h2>
 
-<p>There are many other note-taking applications available for more complex circumstances, and we'll introduce some of those later in the course. If you are already using one - great, keep doing what you are doing!</p>
+<p>There are many other note-taking applications available for more complex circumstances, and we'll introduce some of those later in the guide. If you are already using one - great, keep doing what you are doing!</p>
 
 {% endguidance %}

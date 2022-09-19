@@ -1,5 +1,8 @@
 ---
 layout: layout.njk
+tags: guide-section
+title: "Checking Your Emails"
+order: 2
 eleventyNavigation:
   key: "Checking Your Emails"
   parent: "Intentional Technology"

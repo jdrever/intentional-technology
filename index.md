@@ -4,4 +4,4 @@ title: Intentional Technology
 ---
 <h1>Welcome!</h1>
 
-<p class="lead">The following courses are currently available</p>
+<p class="lead">The following guides are currently available</p>

@@ -6,23 +6,49 @@
           {{ content | safe }}
 <div class="container px-4">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-{%- for course in collections.course -%}
+{%- for guide in collections.guide -%}
     <div class="col">   
       <div class="card shadow-sm">
         <div class="card-body">
-          <h3 class="card-text">{{ course.data.title }}</h3>
-          <p>{{ course.data.description }}</p>
-{% if course.data.status=='Discovery' %}
-<p class="alert alert-warning">This course is in its <strong>Discovery</strong> phase of development.  This means we are still at the early stages of experimenting with it.</p>
+          <h3 class="card-text">{{ guide.data.title }}</h3>
+          <p>{{ guide.data.description }}</p>
+{% if guide.data.status=='Discovery' %}
+<p class="alert alert-warning">This guide is in its <strong>Discovery</strong> phase of development.  This means we are still at the early stages of experimenting with it.</p>
 {% endif %}
-{% if course.data.status=='Alpha' %}
-<p class="alert alert-warning">This course is in its <strong>Alpha</strong> phase of development.  This means we are still experimenting with it and it is not complete.</p>
+{% if guide.data.status=='Alpha' %}
+<p class="alert alert-warning">This guide is in its <strong>Alpha</strong> phase of development.  This means we are still experimenting with it and it is not complete.</p>
 {% endif %}
-{% if course.data.status=='Beta' %}
-<p class="alert alert-info">This course is in its <strong>Beta</strong> phase of development.  This means we are still refining it, but it should be nearly complete.</p>
+{% if guide.data.status=='Beta' %}
+<p class="alert alert-info">This guide is in its <strong>Beta</strong> phase of development.  This means we are still refining it, but it should be nearly complete.</p>
 {% endif %}
 
-            <a href="{{ course.url }}" type="button" class="btn btn-primary m-2">START THE COURSE &rarr;</a>
+{% set navPages = collections.guide-content  %}
+{% macro renderNavListItem(entry) -%}
+<li>
+    {% if entry.url != page.url %} 
+    <a href="{{ entry.url | url }}">
+    {% else %} <b>
+    {% endif %}
+    {{ entry.title }}
+    {% if entry.url != page.url %} 
+    </a>
+    {% else %} << You are here </b>
+    {% endif %}
+</li>
+{%- if entry.children.length -%}
+  <ul>
+    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+  </ul>
+{%- endif -%}
+</li>
+{%- endmacro %}
+
+<ul>
+{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+</ul>
+
+
+            <a href="{{ guide.url }}" type="button" class="btn btn-primary m-2">START THE GUIDE &rarr;</a>
         </div>
       </div>
     </div>
