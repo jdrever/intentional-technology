@@ -6,6 +6,7 @@ description: "The aim of this guide is to help you use technology intentionally.
 status: Discovery
 eleventyNavigation:
   key: Intentional Technology
+  type: guide
 ---
 
 <h1>Welcome to Intentional Technology</h1>

@@ -1,9 +1,12 @@
 ---
 layout: layout.njk
-tags: guide-section
-guide-parent: "Intentional Technology"
-title: "Introduce Yourself"
-section-order: 1
+tag: guide-content
+
+eleventyNavigation:
+  key: "Introduce Yourself"
+  parent: "Intentional Technology"
+  order: 1.1
+  test: "Hello!"
 ---
 
 <h1>Introduce Yourself</h1>

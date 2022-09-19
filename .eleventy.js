@@ -29,7 +29,14 @@ module.exports = function (eleventyConfig) {
       return collectionApi.getFilteredByTag("guide-section")
         .sort((a, b) => a.order - b.order);
     });
-
+    eleventyConfig.addCollection("myCustomSort", function(collectionApi) {
+      return collectionApi.getAll().sort(function(a, b) {
+        //return a.date - b.date; // sort by date - ascending
+        //return b.date - a.date; // sort by date - descending
+        //return a.inputPath.localeCompare(b.inputPath); // sort by path - ascending
+        return b.inputPath.localeCompare(a.inputPath); // sort by path - descending
+      });
+    });
 
   eleventyConfig.addPairedShortcode("activity", function(content, title) {
     return `<div class="container-fluid rounded m-1 p-2 bg-light">

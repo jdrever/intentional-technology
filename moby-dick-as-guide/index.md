@@ -6,6 +6,7 @@ description: "I think Herman Melville's Moby Dick can be viewed as a survival gu
 status: Discovery
 eleventyNavigation:
   key: "Introduction"
+  type: guide
 ---
 I think Herman Melville's Moby Dick can be viewed as a survival guide to the twenty first century.
 

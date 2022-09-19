@@ -6,6 +6,7 @@ description: "You may find this guide useful if you have already started to medi
 status: Discovery
 eleventyNavigation:
   key: Intentional Meditation
+  type: guide
 ---
 
 <h1>Welcome to Intentional Meditation</h1>

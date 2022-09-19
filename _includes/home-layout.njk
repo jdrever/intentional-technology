@@ -21,33 +21,6 @@
 {% if guide.data.status=='Beta' %}
 <p class="alert alert-info">This guide is in its <strong>Beta</strong> phase of development.  This means we are still refining it, but it should be nearly complete.</p>
 {% endif %}
-
-{% set navPages = collections.guide-content  %}
-{% macro renderNavListItem(entry) -%}
-<li>
-    {% if entry.url != page.url %} 
-    <a href="{{ entry.url | url }}">
-    {% else %} <b>
-    {% endif %}
-    {{ entry.title }}
-    {% if entry.url != page.url %} 
-    </a>
-    {% else %} << You are here </b>
-    {% endif %}
-</li>
-{%- if entry.children.length -%}
-  <ul>
-    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
-  </ul>
-{%- endif -%}
-</li>
-{%- endmacro %}
-
-<ul>
-{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-</ul>
-
-
             <a href="{{ guide.url }}" type="button" class="btn btn-primary m-2">START THE GUIDE &rarr;</a>
         </div>
       </div>

@@ -1,6 +1,7 @@
 
 
 {% include "header.njk" %} 
+{% include "breadcrumb.njk" %}
   <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
     <main>
       <div class="container px-4">
@@ -18,8 +19,24 @@
 <p class="alert alert-info">This guide is in its <strong>Beta</strong> phase of development.  This means we are still refining it, but it should be nearly complete.</p>
 {% endif %}
 
+{% set flatNavItems = collections.all | eleventyNavigation | flattenNavigationAndAddNextPrev %}
+{% for item in flatNavItems %}
+  {% if item.url === page.url %}
 
-            <a href="{{ guide.url }}" type="button" class="btn btn-primary m-2">START THE GUIDE &rarr;</a>
+    {% if item.nextTitle %}
+          <a class="btn btn-primary m-2" href="{{ item.nextUrl }}" role="button">
+            NEXT : {{ item.nextTitle }} &rarr;
+          </a>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<details>
+  <summary>See the contents of the guide</summary>
+  <div class="container m-3">
+  {% include "guide-structure.njk" %}
+</div>
+</details>
 
   </div>
     </main>
