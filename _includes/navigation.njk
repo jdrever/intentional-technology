@@ -10,13 +10,13 @@
       </a>
     {% endif %}
 
-    {% if item.nextTitle %}
+    {% if ((item.nextTitle) and (item.nextType != 'guide'))  %}
       <a class="btn btn-primary m-2" href="{{ item.nextUrl }}" role="button">
-        NEXT: {{ item.nextTitle }} &rarr;
+        NEXT: {{ item.nextTitle }} {{item.type }} &rarr;
       </a>
     {% else %}
             <a class="btn btn-primary m-2" href="/" role="button">
-        FINISH guide
+        FINISH GUIDE
       </a>
     {% endif %}
   {% endif %}

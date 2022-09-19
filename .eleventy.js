@@ -90,8 +90,9 @@ eleventyConfig.addFilter('flattenNavigationAndAddNextPrev', (nav) => {
   for (let i = 0; i < flat.length; i++) {
     const item = flat[i];
     if (i>0) { item.prevUrl = flat[i - 1].url;  item.prevTitle=flat[i - 1].title } 
-    if (i<flat.length-1) { item.nextUrl = flat[i + 1].url; item.nextTitle=flat[i + 1].title} 
+    if (i<flat.length-1) { item.nextUrl = flat[i + 1].url; item.nextTitle=flat[i + 1].title; item.nextType=flat[i+1].type; }     
   }
+  console.info(flat);
   return flat;
 });
 
