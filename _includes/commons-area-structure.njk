@@ -1,0 +1,35 @@
+
+{% set navPages = collections.all | eleventyNavigation(title) %}
+{% macro renderNavListItem(entry) -%}
+    {% if entry.url != page.url %} 
+    <a href="{{ entry.url | url }}">
+    {% else %} <b>
+    {% endif %}
+    {{ entry.title }}
+    {% if entry.url != page.url %} 
+    </a>
+    {% else %} </b>
+    {% endif %}
+{%- if entry.children.length -%}
+  <ul>
+    {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+  </ul>
+{%- endif -%}
+</li>
+{%- endmacro %}
+
+<div class="container px-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+{%- for entry in navPages %} 
+    <div class="col">   
+      <div class="card shadow-sm">
+        <div class="card-body">
+    {% if ((entry.type != 'guide') or (entry.url == page.url ))  %}
+    {{ renderNavListItem(entry) }}
+    {% endif %}
+        </div>
+      </div>
+    </div>
+{%- endfor -%}
+  </div>
+</div>

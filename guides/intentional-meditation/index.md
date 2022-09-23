@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: guide-home-layout.njk
 tags: guide
 title: Intentional Meditation
 description: "You may find this guide useful if you have already started to meditate but haven't yet settled on a path."
@@ -8,6 +8,7 @@ image: "/images/guides/intentional_meditation.png"
 eleventyNavigation:
   key: Intentional Meditation
   type: guide
+  parent: Home
 ---
 
 <h1>Welcome to Intentional Meditation</h1>

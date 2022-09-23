@@ -8,6 +8,7 @@ image: "/images/guides/moby-dick.png"
 eleventyNavigation:
   key: "Introduction"
   type: "guide"
+  parent: "Home"
 ---
 
 In this guide, I will try to explain why Moby Dick is such a potentially helpful and important resource at this particular point in history.  One way of seeing Moby Dick is to understand it as a survivor's story: a retrospective description of being stuck on a boat headed towards its own destruction.  A lot of people on the boat fear that their story won't end well, but they are led to their doom by their monomaniacal leader.  This demented leader thinks he can wreak revenge on the natural world.  The natural world wins.  There is only one survivor, but the survivor returns with knowledge and perspectives that have aided his survival.

@@ -1,0 +1,14 @@
+
+
+{% include "header.njk" %} 
+{% include "breadcrumb.njk" %}
+  <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
+    <main>
+          {{ content | safe }}
+
+  <p>This areas of the commons contains the following resources:</p>
+  {% include "commons-area-structure.njk" %}
+    </main>
+  </div>
+{% include "footer.njk" %}
+

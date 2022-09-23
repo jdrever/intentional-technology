@@ -7,6 +7,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images/");
   eleventyConfig.addPassthroughCopy("css/");
 
+  eleventyConfig.addPassthroughCopy({ "node_modules/lite-youtube-embed/src/**": "css" });
+
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(EleventyEdgePlugin);
 
@@ -72,6 +74,10 @@ ${content}
       ${content}
     </details>
   `;
+  });
+
+  eleventyConfig.addPairedShortcode("youTube", function(title, videoId) {
+    return `<lite-youtube videoid="${videoId}" playlabel="${title}"></lite-youtube>`;
   });
 
   /**

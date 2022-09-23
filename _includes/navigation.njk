@@ -9,8 +9,7 @@
         &larr; PREVIOUS: {{ item.prevTitle }}
       </a>
     {% endif %}
-
-    {% if ((item.nextTitle) and (item.nextType != 'guide'))  %}
+    {% if ((item.nextTitle) and (item.nextType != 'guide' and item.nextType !='commonshome'))  %}
       <a class="btn btn-primary m-2" href="{{ item.nextUrl }}" role="button">
         NEXT: {{ item.nextTitle }} {{item.type }} &rarr;
       </a>

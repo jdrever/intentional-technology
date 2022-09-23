@@ -26,7 +26,7 @@
 {% for item in flatNavItems %}
   {% if item.url === page.url %}
 
-    {% if item.nextTitle %}
+    {% if item.nextTitle and item.nextType !='commonshome' %}
           <a class="btn btn-primary m-2" href="{{ item.nextUrl }}" role="button">
             NEXT : {{ item.nextTitle }} &rarr;
           </a>

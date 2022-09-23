@@ -19,16 +19,16 @@ eleventyNavigation:
     <tbody class="table-group-divider">
         <tr>
             <th scope="row">RELEASE</th>
-            <td><a href="/meditation/focused-awareness/">Focused Awareness</a> &#8594; <a
-                    href="/meditation/close-observation">Close Observation</a> &#8594; Cessation</td>
-            <td><a href="/meditation/open-awareness/">Open Awareness</a> &#8594; Remaining in and Refining Open Awareness</td>
+            <td><a href="/commons/meditation/focused-awareness/">Focused Awareness</a> &#8594; <a
+                    href="/commons/meditation/close-observation">Close Observation</a> &#8594; Cessation</td>
+            <td><a href="/commons/meditation/open-awareness/">Open Awareness</a> &#8594; Remaining in and Refining Open Awareness</td>
         </tr>
         <tr>
             <th scope="row">CONNECTION</th>
-            <td><a href="/meditation/focused-awareness/">Focused Awareness</a> &#8594; <a
-                    href="/meditation/open-awareness/">Open Awareness</a>  &#8594; Close Observation Within Open Awareness &#8594;
+            <td><a href="/commons/meditation/focused-awareness/">Focused Awareness</a> &#8594; <a
+                    href="/commons/meditation/open-awareness/">Open Awareness</a>  &#8594; Close Observation Within Open Awareness &#8594;
                 Skilfull Activity in the World</td>
-            <td><a href="/meditation/open-awareness/">Open Awareness</a>  &#8594; Close Observation Within Open Awareness &#8594;
+            <td><a href="/commons/meditation/open-awareness/">Open Awareness</a>  &#8594; Close Observation Within Open Awareness &#8594;
                 Skilfull Activity in the World</td>
         </tr>
     </tbody>

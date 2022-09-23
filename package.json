@@ -18,6 +18,7 @@
     "bootstrap": "^5.2.1",
     "bootstrap-icons": "^1.9.1",
     "eleventy-plugin-purgecss": "^0.2.1",
+    "lite-youtube-embed": "^0.2.0",
     "netlify-cli": "^11.7.1"
   }
 }
