@@ -11,6 +11,9 @@
       <div class="card shadow-sm">
         <div class="card-body">
           <h3 class="card-text">{{ guide.data.title }}</h3>
+          {% if guide.data.image %}
+            <img class="img-thumbnail rounded mx-auto d-block" src="{{guide.data.image}}" alt="{{guide.data.imageAlt}}" width="250" height="250">
+          {% endif %}
           <p>{{ guide.data.description }}</p>
 {% if guide.data.status=='Discovery' %}
 <p class="alert alert-warning">This guide is in its <strong>Discovery</strong> phase of development.  This means we are still at the early stages of experimenting with it.</p>

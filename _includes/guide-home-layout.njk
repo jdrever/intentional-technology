@@ -5,8 +5,11 @@
   <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
     <main>
       <div class="container px-4">
-          <h1>{{ guideTitle }}</h1>
-          <p>{{ guide.data.description }}</p>
+          <h1>{{ title }}</h1>
+          {% if image %}
+            <img class="img-thumbnail" src="{{image}}" alt="{{imageAlt}}" width="250" height="250">
+          {% endif %}
+          <p class="lead">{{ description }}</p>
 
           {{ content | safe }}
           {% if status=='Discovery' %}
