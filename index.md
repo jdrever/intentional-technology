@@ -5,6 +5,29 @@ eleventyNavigation:
   key: Home
   type: home-page
 ---
-<h1>Welcome!</h1>
+<h1>Welcome to the Careful Digital Commons</h1>
 
-<p class="lead">The following guides are currently available</p>
+<p class="lead">This Digital Commons is a set of guides and resources that are freely available for anyone's use.</p>
+
+
+<div class="container px-4" id="featured-3">
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <h3 class="fs-2">Guides</h3>
+        <p>Be lead through how to use technology intentionally, among other guides under development</p>
+        <a href="/guides/" class="btn btn-sm btn-outline-secondary">
+          Browse the Guides
+        </a>
+    </div>
+    <div class="feature col">
+      <h3 class="fs-2">Resources</h3>
+      <p>Resources about technology, meditation and neuroscience that support the Guides</p>
+        <a href="/resources/" class="btn btn-sm btn-outline-secondary">
+          Browse the Resources
+        </a>
+    </div>
+  </div>
+</div>
+
+
+

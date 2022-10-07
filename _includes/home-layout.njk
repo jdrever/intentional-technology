@@ -4,35 +4,6 @@
   <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
     <main>
           {{ content | safe }}
-<div class="container px-4">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-{%- for guide in collections.guide -%}
-    <div class="col">   
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3 class="card-text">{{ guide.data.title }}</h3>
-          {% if guide.data.image %}
-            <img class="img-thumbnail rounded mx-auto d-block" src="{{guide.data.image}}" alt="{{guide.data.imageAlt}}" width="250" height="250">
-          {% endif %}
-          <p>{{ guide.data.description }}</p>
-{% if guide.data.status=='Discovery' %}
-<p class="alert alert-warning">This guide is in its <strong>Discovery</strong> phase of development.  This means we are still at the early stages of experimenting with it.</p>
-{% endif %}
-{% if guide.data.status=='Alpha' %}
-<p class="alert alert-warning">This guide is in its <strong>Alpha</strong> phase of development.  This means we are still experimenting with it and it is not complete.</p>
-{% endif %}
-{% if guide.data.status=='Beta' %}
-<p class="alert alert-info">This guide is in its <strong>Beta</strong> phase of development.  This means we are still refining it, but it should be nearly complete.</p>
-{% endif %}
-            <a href="{{ guide.url }}" type="button" class="btn btn-primary m-2">START THE GUIDE &rarr;</a>
-        </div>
-      </div>
-    </div>
-{% endfor %}
-  </div>
-</div>
-
-
     </main>
   </div>
 {% include "footer.njk" %}

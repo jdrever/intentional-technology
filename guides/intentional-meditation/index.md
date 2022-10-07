@@ -8,7 +8,7 @@ image: "/images/guides/intentional_meditation.png"
 eleventyNavigation:
   key: Intentional Meditation
   type: guide
-  parent: Home
+  parent: Guides
 ---
 
 <h1>Welcome to Intentional Meditation</h1>

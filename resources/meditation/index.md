@@ -7,7 +7,7 @@ status: Discovery
 image: "/images/guides/intentional_meditation.png"
 eleventyNavigation:
   key: Meditation
-  parent: The Commons
+  parent: Resources
   type: commons-area
 ---
 

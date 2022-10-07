@@ -9,7 +9,7 @@ imageAlt: "A pair of digital glasses through which you can see a vivid forest"
 eleventyNavigation:
   key: Intentional Technology
   type: guide
-  parent: Home
+  parent: Guides
 ---
 <p>The guide is made up of some <span class="text-dark display-6"><strong><i class="bi bi-lightbulb-fill"></i>&nbsp;KEY IDEAS</strong></span>&nbsp;, some <span class="text-dark display-6"><strong><i class="bi bi-heart-pulse"></i>&nbsp;ACTIVITIES</strong></span> and some&nbsp;<span class="text-dark display-6"><strong><i class="bi bi-compass"></i>GUIDANCE</strong></span></p>
 

@@ -6,7 +6,7 @@ description: ""
 status: Discovery
 image: "/images/guides/intentional_meditation.png"
 eleventyNavigation:
-  key: The Commons
+  key: Resources
   type: commonshome
 ---
 
