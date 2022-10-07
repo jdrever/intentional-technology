@@ -10,6 +10,6 @@ eleventyNavigation:
   type: commonshome
 ---
 
-<h1>Welcome to the Careful Digital Commons</h1>
+<h1>Welcome to the Careful Digital Resources</h1>
 
 <p class="lead">This is where we share useful resources in the following areas:</p>
