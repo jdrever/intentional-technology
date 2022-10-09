@@ -26,6 +26,13 @@ eleventyNavigation:
           Browse the Resources
         </a>
     </div>
+        <div class="feature col">
+      <h3 class="fs-2">Blog</h3>
+      <p>Posts about technology, meditation and neuroscience that support the Guides</p>
+        <a href="/blog/" class="btn btn-sm btn-outline-secondary">
+          Browse the Blog
+        </a>
+    </div>
   </div>
 </div>
 

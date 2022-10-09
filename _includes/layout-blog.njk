@@ -1,0 +1,15 @@
+{% include "header.njk" %}   
+  <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
+    <main>
+    {{ content | safe }}
+
+{% for post in collections.post | reverse %}
+<h2>{{ post.data.title }}</h2>
+<p><b>{{ post.date | postDate }}</b></p>
+<p>{{ post.templateContent | truncate(300) | striptags }} </p> 
+<p><a href="{{ post.url }}">Read more</a></p>
+{% endfor %} 
+
+    </main>
+  </div>
+{% include "footer.njk" %}

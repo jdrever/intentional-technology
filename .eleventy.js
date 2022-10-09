@@ -1,6 +1,7 @@
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { EleventyEdgePlugin } = require("@11ty/eleventy");
+const { DateTime } = require("luxon");
 
 
 module.exports = function (eleventyConfig) {
@@ -24,6 +25,10 @@ module.exports = function (eleventyConfig) {
     if (!guide) return collection;
       const filtered = collection.filter(item => item.guideParent == guide)
       return filtered;
+  });
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
     // Get only content that matches a tag
