@@ -1,6 +1,8 @@
 ---
 title: "Intentional Technology: We are all cyborgs now"
-tags: post
+tags: 
+- post
+- "Intentional Technology"
 layout: layout-blogpost.njk
 date: 2022-08-12
 ---

@@ -21,6 +21,18 @@ module.exports = function (eleventyConfig) {
     quiet: false,
   });
 
+  eleventyConfig.addCollection('tagsList', (collectionApi) => {
+    const tagsSet = new Set()
+    collectionApi.getFilteredByTag("post").forEach((item) => {
+      if (!item.data.tags) return
+      item.data.tags
+        .filter((tag) => !['post'].includes(tag))
+        .forEach((tag) => tagsSet.add(tag))
+    })
+    return [...tagsSet].sort((a, b) => b.localeCompare(a))
+  })
+
+
   eleventyConfig.addFilter('guideFilter', function(collection, guide) {
     if (!guide) return collection;
       const filtered = collection.filter(item => item.guideParent == guide)

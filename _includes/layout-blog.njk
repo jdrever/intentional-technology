@@ -3,6 +3,16 @@
     <main>
     {{ content | safe }}
 
+
+
+
+<p><strong>Tags: </strong>
+{% for tag in collections.tagsList %}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <a href="{{ tagUrl | url }}" class="tag">{{ tag | title }}</a> |
+{% endfor %}
+</p>
+
 {% for post in collections.post | reverse %}
 <h2>{{ post.data.title }}</h2>
 <p><b>{{ post.date | postDate }}</b></p>

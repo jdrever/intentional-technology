@@ -17,7 +17,7 @@ base('Introductions').select({
         //console.log('Retrieved', record.get('Introduction'));
     });
 
-    console.info(JSON.stringify(introductions));
+    //console.info(JSON.stringify(introductions));
     
 
 }, function done(err) {

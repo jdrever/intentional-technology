@@ -1,6 +1,8 @@
 ---
 title: "Tana: a note-taking app with good bits from Roam and Notion"
-tags: post
+tags: 
+- post
+- "Note-taking"
 layout: layout-blogpost.njk
 date: 2022-10-09
 ---
