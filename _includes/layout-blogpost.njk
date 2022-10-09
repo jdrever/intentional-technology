@@ -1,12 +1,15 @@
 {% include "header.njk" %}
+
+
 <style>
 blockquote { margin-left: 1em; margin-right:1em; }
 </style>
 
   <div class="container-fluid mt-4 mx-auto" style="width: 80%;">
     <main>
-      <p><b>{{ date | postDate }}</b></p>
+      <p><a href="/blog/">Blog</a></p>
       <h1>{{ title }}</h1>
+      <p><b>{{ date | postDate }}</b></p>
       {{ content | safe }}
     </main>
   </div>
