@@ -3,7 +3,7 @@ layout: layout-blog.njk
 title: "Blog"
 ---
 
-<h1>Blog</h1>
+<h1>Welcome to the Careful Digital Blog</h1>
 
 
 
