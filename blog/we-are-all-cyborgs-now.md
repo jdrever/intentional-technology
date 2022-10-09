@@ -13,11 +13,11 @@ We are all cyborgs, because although we have so far mostly resisted having techn
 
 There have been lots of Youtube hours and blog post words dedicated to how to improve these external, secondary digital brains to make us more productive and effective but to me the deeper question is: how do our physical bodies and mind work work alongside our external digital helpers?  How do we work with technology in ways that allow us to engage deeply with the world around us?
 
-To explore these question, we're planning a series of posts about Intentional Technology and the development of an online course: <a href="/projects/intentional-technology,html">Intentional Technology</a>.  We will be looking at these questions in a practical, every-day way.  We still want to get things done, but we want to get them done with head and heart fully engaged.
+To explore these question, we're planning a series of posts about Intentional Technology and the development of an online course: <a href="https://careful.digital/projects/intentional-technology,html">Intentional Technology</a>.  We will be looking at these questions in a practical, every-day way.  We still want to get things done, but we want to get them done with head and heart fully engaged.
 
 The course is currently under development, and we are looking for people to join the free beta version of the course and to give feedback that will guide the development of the course.
 
-<a href="/projects/intentional-technology/">Find out more about the course.</a>
+<a href="https://careful.digital/projects/intentional-technology/">Find out more about the course.</a>
 
 
 
