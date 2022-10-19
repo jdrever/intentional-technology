@@ -2,7 +2,7 @@
 title: "Nature and Technology"
 tags: 
 - post
-- "Nature & Tech"
+- "Nature and Tech"
 layout: layout-blogpost.njk
 date: 2019-03-22
 ---

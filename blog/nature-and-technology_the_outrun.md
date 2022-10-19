@@ -2,7 +2,7 @@
 title: Nature and Technology in Chapter 19 of The Outrun by Amy Liptrot
 tags: 
 - post
-- "Nature & Tech"
+- "Nature and Tech"
 layout: layout-blogpost.njk
 date: 2020-11-20
 author: James Drever

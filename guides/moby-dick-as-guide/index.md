@@ -7,7 +7,7 @@ status: Discovery
 image: "/images/guides/moby-dick.png"
 eleventyNavigation:
   key: "Introduction"
-  type: "guide"
+  type: "hide-guide"
   parent: "Guides"
 ---
 
