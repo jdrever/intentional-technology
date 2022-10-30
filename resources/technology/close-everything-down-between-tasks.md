@@ -9,9 +9,14 @@ eleventyNavigation:
   type: commons-resource
   order: 2
 ---
-
 <h1>Close everything down between tasks</h1>
 
+<h4>Starting Point</h4>
+<p>You have sufficient technological expertise to have a bunch of tabs open. You are busy. You are starting a new task. You have the feeling of being overwhelmed which you don't like.</p>
+<h4>Intended Outcome</h4> 
+<p>Increased clarity. A feeling of relief.</p>
+
+<h2>What do do</h2>
 One piece of standard productivity guidance that is mostly helpful is to concentrate on one task at a time rather than trying to multi-task.  One thing you can do to strengthen the feeling that you are concentrating on one task is to intentionally close down any other applications before you starting working on your new task.
 
 This means for example:
